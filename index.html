@@ -7,129 +7,173 @@
     <title>Fitness Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+</header>
 
-<body>
-    <!-- Header Section -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">Fitness</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <img src="./images/hero-pic.png" alt="" class="hero-pic">
-            <h1>Get body in <span>shape & stay healthy</span></h1>
-            <p>A huge selection of tools and fitness content. Easily register and personalize the program for every user
-                of the platform.</p>
-            <div class="hero-buttons">
-                <a href="#" class="btn-primary">Join Club Now!</a>
-                <a href="#" class="btn-secondary">Download App</a>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Get body in <span class="shape">shape</span> & stay healthy</h1>
+        <p>A huge selection of health and fitness content, healthy recipes and transformation stories to help you get
+            fit and stay fit!</p>
+        <div class="hero-buttons">
+            <a href="#" class="btn join">Join Club Now!</a>
+            <a href="#" class="btn download">Download App</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="images/hero-pic.png" alt="Fitness Guy">
+    </div>
+    <div class="video-stats">
+        <div class="stat">
+            <span>500+</span>
+            <p>Free Workout Videos</p>
+        </div>
+        <div class="stat">
+            <span>350+</span>
+            <p>Video tutorial</p>
+        </div>
+    </div>
+</section>
+
+<!-- Change Your Habits Section -->
+<section class="habits">
+    <h2>Change Your Habits</h2>
+    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+    <div class="habits-cards">
+        <!-- habit card -->
+        <div class="card">
+            <img src="images/habit1.png" alt="Movement">
+            <h3>Movement</h3>
+            <p>We believe fitness should be accessible to everyone</p>
+        </div>
+        <div class="card">
+            <img src="images/habit2.png" alt="Time">
+            <h3>Time</h3>
+            <p>We believe fitness should be accessible to everyone</p>
+        </div>
+        <div class="card">
+            <img src="images/habit3.png" alt="Practice">
+            <h3>Practice</h3>
+            <p>We believe fitness should be accessible to everyone</p>
+        </div>
+        <div class="card">
+            <img src="images/habit4.png" alt="Weight Loss">
+            <h3>Weight Loss</h3>
+            <p>We believe fitness should be accessible to everyone</p>
+        </div>
+    </div>
+</section>
+
+<!-- run-extra-mile -->
+<section class="promo-section">
+    <div class="promo-content">
+        <h2>Run an Extra Mile Easily</h2>
+        <p>Use these fitness rituals to exercise for energy, run more miles, and achieve your wellness goals.</p>
+        <a href="#" class="btn">Join Now</a>
+    </div>
+    <div class="promo-image">
+        <img src="images/run.jpg" alt="Running Guy">
+    </div>
+</section>
+
+<!-- Training Section -->
+<section class="training-section">
+    <h2>Trainings and Exercises</h2>
+    <p>Key fitness routines that are essential to running, strength training, yoga practices, and other body exercises.
+    </p>
+    <div class="training-grid">
+        <div class="training-item" style="background-color: #58b3b3;">
+            <img src="images/trainer1.png" alt="Training 1">
+            <div class="training-text">
+                <h3>Lower Body</h3>
             </div>
         </div>
-    </header>
-
-    <!-- Change Your Habits Section -->
-    <section class="habits">
-        <h2>Change Your Habits</h2>
-        <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
-        <div class="habits-cards">
-            <!-- habit card -->
-            <div class="card">
-                <img src="images/habit1.png" alt="Movement">
-                <h3>Movement</h3>
-                <p>We believe fitness should be accessible to everyone</p>
-            </div>
-            <div class="card">
-                <img src="images/habit2.png" alt="Time">
-                <h3>Time</h3>
-                <p>We believe fitness should be accessible to everyone</p>
-            </div>
-            <div class="card">
-                <img src="images/habit3.png" alt="Practice">
-                <h3>Practice</h3>
-                <p>We believe fitness should be accessible to everyone</p>
-            </div>
-            <div class="card">
-                <img src="images/habit4.png" alt="Weight Loss">
-                <h3>Weight Loss</h3>
-                <p>We believe fitness should be accessible to everyone</p>
+        <div class="training-item" style="background-color: #e91e63;">
+            <img src="images/trainer2.png" alt="Training 2">
+            <div class="training-text">
+                <h3>Core Strength</h3>
             </div>
         </div>
-    </section>
-
-    <!-- run-extra-mile -->
-    <section id="run-extra-mile">
-        <h1>Run an extra mile easily</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-        <div class="image-container">
-            <img src="http://googleusercontent.com/image_generation_content/2"
-                alt="A person running an extra mile easily">
-            <img src="http://googleusercontent.com/image_generation_content/3"
-                alt="A person running an extra mile easily">
-        </div>
-    </section>
-
-
-
-    <!-- Training Section -->
-    <section class="training">
-        <h2>Trainings and Exercises</h2>
-        <div class="training-gallery">
-            <!-- Repeat for each training item -->
-            <div class="gallery-item">Training 1</div>
-        </div>
-    </section>
-
-    <!-- BMI Calculator Section -->
-    <section class="bmi-calculator">
-        <h2>BMI Calculator</h2>
-        <div class="bmi-content">
-            <div class="bmi-chart">
-                <!-- BMI chart content -->
-            </div>
-            <div class="bmi-form">
-                <form>
-                    <!-- Form elements for BMI calculation -->
-                </form>
+        <div class="training-item" style="background-color: #9c27b0;">
+            <img src="images/trainer3.png" alt="Training 3">
+            <div class="training-text">
+                <h3>Upper Body</h3>
             </div>
         </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team">
-        <h2>Meet Our Team</h2>
-        <div class="team-members">
-            <!-- Repeat for each team member -->
-
-            <div class="member-card">
-                <img src="images/trainer1.png" alt="Team Member">
-                <h3>Team Member Name</h3>
-                <p>Position</p>
+        <div class="training-item" style="background-color: #3f51b5;">
+            <img src="images/trainer4.png" alt="Training 4">
+            <div class="training-text">
+                <h3>Yoga & Flexibility</h3>
             </div>
-
         </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">Fitness</div>
-            <ul class="footer-links">
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Affiliate Program</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
+        <div class="training-item" style="background-color: #4caf50;">
+            <img src="images/trainer5.png" alt="Training 5">
+            <div class="training-text">
+                <h3>Full Body Workout</h3>
+            </div>
         </div>
-        <p>All rights reserved ©Fitness 2024</p>
-    </footer>
+        <div class="training-item" style="background-color: #2196f3;">
+            <img src="images/trainer6.png" alt="Training 6">
+            <div class="training-text">
+                <h3>Cardio Training</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- BMI Calculator Section -->
+<section class="bmi-calculator">
+    <h2>BMI Calculator</h2>
+    <div class="bmi-content">
+        <div class="bmi-chart">
+            <!-- BMI chart content -->
+        </div>
+        <div class="bmi-form">
+            <form>
+                <!-- Form elements for BMI calculation -->
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-members">
+        <!-- Repeat for each team member -->
+
+        <div class="member-card">
+            <img src="images/trainer1.png" alt="Team Member">
+            <h3>Team Member Name</h3>
+            <p>Position</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">Fitness</div>
+        <ul class="footer-links">
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+    <p>All rights reserved ©Fitness 2024</p>
+</footer>
 </body>
 
 </html>
