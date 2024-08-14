@@ -132,7 +132,7 @@ nav ul li a:hover {
 
 /* Media Queries for Responsiveness */
 
-/* iPad Mini (768x1024) */
+/* iPad Mini (768x1024) */ 
 @media (max-width: 1024px) {
     .hero {
         flex-direction: column;
@@ -177,9 +177,7 @@ nav ul li a:hover {
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
+        display: none;
     }
 
     nav ul li {
@@ -434,8 +432,16 @@ nav ul li a:hover {
 
 .team-grid {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+}
+
+.team-row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -527,6 +533,11 @@ footer p {
         gap: 20px;
     }
 
+    .team-row1{
+        display: flex;
+        flex-direction: column;
+    }
+
     .footer-content {
         flex-direction: column;
     }
@@ -547,6 +558,11 @@ footer p {
         width: 100%;
     }
 
+    .team-row1{
+        display: flex;
+        flex-direction: column;
+    }
+    
     .footer-content h2 {
         font-size: 28px;
     }
