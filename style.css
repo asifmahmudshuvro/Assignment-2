@@ -1,6 +1,6 @@
-/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     margin: 0;
     padding: 0;
     background-color: #1a1a1a;
@@ -22,11 +22,15 @@ header {
     margin: 30px 100px 0px 100px;
 }
 
+.mobile-nav{
+    display: none;
+}
+
 nav .logo a {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
-    color: #ff453a;
+    color: rgb(230, 83, 60);
 }
 
 nav ul {
@@ -48,7 +52,7 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-    background-color: #ff453a;
+    background-color: rgb(230, 83, 60);
 }
 
 .hero {
@@ -73,7 +77,7 @@ nav ul li a:hover {
 .hero-content h1 .shape {
     font-family: 'Brush Script MT', cursive;
     font-style: italic;
-    color: #ff453a;
+    color: rgb(230, 83, 60);
 }
 
 .hero-content p {
@@ -92,7 +96,7 @@ nav ul li a:hover {
 }
 
 .hero-buttons .btn.join {
-    background-color: #ff453a;
+    background-color: rgb(230, 83, 60);
 }
 
 .hero-buttons .btn.download {
@@ -100,7 +104,7 @@ nav ul li a:hover {
 }
 
 .hero-image {
-    max-width: 40%;
+    width: 100%;
 }
 
 .hero-image img {
@@ -109,25 +113,46 @@ nav ul li a:hover {
 }
 
 .video-stats {
-    position: absolute;
+    position: relative;
     bottom: 20px;
     right: 20px;
     display: flex;
     gap: 20px;
 }
 
-.video-stats .stat {
+.video-stats .stat1 {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: absolute;
+    top: 5rem;
+    right: 5rem;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: 65px;
+    width: 300px;
+}
+
+.video-stats .stat2 {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    height: 65px;
+    width: 300px;
 }
 
-.video-stats .stat span {
+.video-stats .stat1 span {
     display: block;
     font-size: 24px;
     font-weight: bold;
-    color: #ff453a;
+    color: rgb(230, 83, 60);
+}
+
+.video-stats .stat2 span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(230, 83, 60);
 }
 
 /* Media Queries for Responsiveness */
@@ -176,15 +201,19 @@ nav ul li a:hover {
         font-size: 20px;
     }
 
-    nav ul {
-        display: none;
-    }
-
     nav ul li {
         margin-left: 0;
         margin-top: 10px;
     }
 
+    @media screen and (max-width: 576px){
+        nav ul {
+            display: none;
+        }
+    .mobile-nav{
+        display: block;
+    }
+    }
     .hero {
         padding: 20px;
         margin: 20px;
@@ -303,7 +332,7 @@ nav ul li a:hover {
 .promo-content .btn {
     text-decoration: none;
     color: #fff;
-    background-color: #ff453a;
+    background-color: rgb(230, 83, 60);
     padding: 15px 30px;
     border-radius: 30px;
     font-weight: bold;
@@ -395,22 +424,120 @@ nav ul li a:hover {
 }
 
 /* BMI Calculator Section */
-.bmi-calculator {
+.bmi-section {
+    text-align: center;
+    padding: 50px 0;
     background-color: #1c1c1c;
-    padding: 40px 20px;
+    /* background-color: #1b1b1b;
+    color: #ffffff;
+    padding: 40px 20px; */
+    /* text-align: center;
+    padding: 50px 0;
+    background-color: #1c1c1c; */
+}
+
+.bmi-container {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.bmi-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.bmi-container p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #cccccc;
 }
 
 .bmi-content {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .bmi-chart,
-.bmi-form {
-    width: 45%;
-    margin: 10px;
+.bmi-form-container {
+    width: 48%;
 }
+
+.bmi-chart h3,
+.bmi-form-container h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.bmi-chart table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+}
+
+.bmi-chart th,
+.bmi-chart td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.bmi-chart th {
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #ffffff;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #f05b3f;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #e04b2f;
+}
+
+/* Media Query for iPads (768px and below) */
+@media screen and (max-width: 768px) {
+    .bmi-content {
+        flex-wrap: wrap;
+    }
+
+    .bmi-chart,
+    .bmi-form-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
 
 /* Team Section */
 
@@ -476,6 +603,11 @@ footer {
     padding: 40px 20px;
     color: white;
     text-align: center;
+
+    /* text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(230, 83, 60); */
 }
 
 .footer-content {
@@ -490,6 +622,7 @@ footer {
 .footer-content h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: rgb(230, 83, 60);
 }
 
 .footer-content p {

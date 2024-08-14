@@ -7,18 +7,26 @@
     <title>Fitness Website</title>
     <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <header>
     <nav class="navbar">
         <div class="logo">
             <a href="#"><i>Fitness</i></a>
         </div>
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
+        <div>
+            <div class="mobile-nav">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 
@@ -32,7 +40,23 @@
             <a href="#" class="btn download">Download App</a>
         </div>
     </div>
-    <div class="hero-image">
+
+    <div class="video-stats">
+        <div class="hero-image">
+            <img src="images/hero-pic.png" alt="Fitness Guy">
+        </div>
+        
+            <div class="stat1">
+                <span>500+</span>
+                <p>Free Workout Videos</p>
+            </div>
+            <div class="stat2">
+                <span>350+</span>
+                <p>Video tutorial</p>
+            </div>
+        
+    </div>
+    <!-- <div class="hero-image">
         <img src="images/hero-pic.png" alt="Fitness Guy">
     </div>
     <div class="video-stats">
@@ -44,7 +68,7 @@
             <span>350+</span>
             <p>Video tutorial</p>
         </div>
-    </div>
+    </div> -->
 </section>
 
 <!-- Change Your Habits Section -->
@@ -136,16 +160,72 @@
 
 
 <!-- BMI Calculator Section -->
-<section class="bmi-calculator">
+<section class="bmi-section">
     <h2>BMI Calculator</h2>
-    <div class="bmi-content">
-        <div class="bmi-chart">
-            <!-- BMI chart content -->
-        </div>
-        <div class="bmi-form">
-            <form>
-                <!-- Form elements for BMI calculation -->
-            </form>
+    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+    <div class="bmi-container">
+        <!-- <h2>BMI Calculator</h2>
+        <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p> -->
+        <div class="bmi-content">
+            <!-- BMI Chart -->
+            <div class="bmi-chart">
+                <h3>BMI Calculator Chart</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>BMI</th>
+                            <th>Weight Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- BMI Form -->
+            <div class="bmi-form-container">
+                <h3>Calculate your BMI</h3>
+                <form id="bmi-form">
+                    <div class="form-group">
+                        <input type="number" id="height" name="height" placeholder="Height/cm" required>
+                        <input type="number" id="weight" name="weight" placeholder="Weight/kg" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="age" name="age" placeholder="Age" required>
+                        <select id="sex" name="sex" required>
+                            <option value="">Sex</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="activity" name="activity" required>
+                            <option value="">Select an activity factor</option>
+                            <option value="sedentary">Sedentary</option>
+                            <option value="lightly active">Lightly Active</option>
+                            <option value="moderately active">Moderately Active</option>
+                            <option value="very active">Very Active</option>
+                        </select>
+                    </div>
+                    <button type="submit">Calculate</button>
+                </form>
+            </div>
         </div>
     </div>
 </section>
@@ -154,7 +234,8 @@
 
 <section class="team-section">
     <h2>Meet Our Team</h2>
-    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access
+        to a gym.</p>
     <div class="team-grid">
         <div class="team-row1">
             <div class="team-member">
@@ -195,9 +276,11 @@
 
 <footer>
     <div class="footer-content">
-        <h2>Fitness</h2>
-        <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.
-            With hundreds of professional workouts.</p>
+        <div>
+            <h2><i>Fitness</i></h2>
+            <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or
+                access to a gym. With hundreds of professional workouts.</p>
+        </div>
         <div class="footer-links">
             <div>
                 <h3>Get Started</h3>
